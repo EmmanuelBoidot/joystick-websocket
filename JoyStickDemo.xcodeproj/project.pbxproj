@@ -14,7 +14,8 @@
 		6B10FBF21A96B672000D1FA3 /* MFLSwiftJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B10FBF11A96B672000D1FA3 /* MFLSwiftJoystick.swift */; };
 		F06CEC2B1DB0940E00E5E886 /* websocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06CEC2A1DB0940E00E5E886 /* websocket.swift */; };
 		F06CEC331DB0C8A700E5E886 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F06CEC321DB0C8A700E5E886 /* libz.1.dylib */; };
-		F06CEC351DB0C8C800E5E886 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06CEC341DB0C8C800E5E886 /* WebSocket.swift */; };
+		F06CEC371DB15B1600E5E886 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = F06CEC361DB15B1600E5E886 /* lib */; };
+		F06CEC391DB15B3000E5E886 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = F06CEC381DB15B3000E5E886 /* Images */; };
 		FE916AE3172AC49B00E60FA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE916AE2172AC49B00E60FA8 /* UIKit.framework */; };
 		FE916AE5172AC49B00E60FA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE916AE4172AC49B00E60FA8 /* Foundation.framework */; };
 		FE916AE7172AC49B00E60FA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE916AE6172AC49B00E60FA8 /* CoreGraphics.framework */; };
@@ -37,7 +38,8 @@
 		6B10FBF11A96B672000D1FA3 /* MFLSwiftJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFLSwiftJoystick.swift; sourceTree = "<group>"; };
 		F06CEC2A1DB0940E00E5E886 /* websocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = websocket.swift; sourceTree = "<group>"; };
 		F06CEC321DB0C8A700E5E886 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
-		F06CEC341DB0C8C800E5E886 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = "../../SwiftWebSocket-swift-2.0/Source/WebSocket.swift"; sourceTree = "<group>"; };
+		F06CEC361DB15B1600E5E886 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../../usr/lib; sourceTree = "<group>"; };
+		F06CEC381DB15B3000E5E886 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = MFLJoystick/Images; sourceTree = "<group>"; };
 		FE916ADE172AC49B00E60FA8 /* JoyStickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyStickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE916AE2172AC49B00E60FA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FE916AE4172AC49B00E60FA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -154,7 +156,8 @@
 		FE916AE9172AC49B00E60FA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F06CEC341DB0C8C800E5E886 /* WebSocket.swift */,
+				F06CEC381DB15B3000E5E886 /* Images */,
+				F06CEC361DB15B1600E5E886 /* lib */,
 				FE916AEA172AC49B00E60FA8 /* JoyStickDemo-Info.plist */,
 				FE916AEB172AC49B00E60FA8 /* InfoPlist.strings */,
 				FE916AEE172AC49B00E60FA8 /* main.m */,
@@ -223,6 +226,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06CEC391DB15B3000E5E886 /* Images in Resources */,
+				F06CEC371DB15B1600E5E886 /* lib in Resources */,
 				FE916AED172AC49B00E60FA8 /* InfoPlist.strings in Resources */,
 				FE916AF5172AC49B00E60FA8 /* Default.png in Resources */,
 				6B10FBEC1A96B65F000D1FA3 /* joy_thumb.png in Resources */,
@@ -247,7 +252,6 @@
 				6B10FBEF1A96B65F000D1FA3 /* MFLJoystick.m in Sources */,
 				6B10FBF21A96B672000D1FA3 /* MFLSwiftJoystick.swift in Sources */,
 				FE916AFC172AC49C00E60FA8 /* ViewController.m in Sources */,
-				F06CEC351DB0C8C800E5E886 /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

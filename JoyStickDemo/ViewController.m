@@ -41,7 +41,7 @@
 
 // communication
 @property WebSocket* _webSocket;
-@property MyWebSocket* _mwebsocket;
+//@property MyWebSocket* _mwebsocket;
 
 @end
 
@@ -57,7 +57,7 @@
     NSString *s3 = [NSString stringWithFormat:@"Radius: %.2f",self.radius];
     [self.radiusLabel setTitle:s3 forState:UIControlStateNormal];
     
-    [self._mwebsocket echoTest];
+//    [self._mwebsocket echoTest];
     [self._webSocket sendWithText:@"hello benni"];
 }
 
@@ -153,7 +153,6 @@
     NSAssert(self._webSocket.readyState == WebSocketReadyStateConnecting, @"WebSocket is not connecting");
     
 //    [[[Connection alloc] init] open];
-    [self._mwebsocket echoTest];
 }
 
 - (void)didReceiveMemoryWarning
