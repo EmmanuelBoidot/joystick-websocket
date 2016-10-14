@@ -58,7 +58,8 @@
     [self.radiusLabel setTitle:s3 forState:UIControlStateNormal];
     
 //    [self._mwebsocket echoTest];
-    [self._webSocket sendWithText:@"hello benni"];
+    NSString *msg = [NSString stringWithFormat:@"%.2f,%.2f",self.acceleration,self.angle];
+    [self._webSocket sendWithText:msg];
 }
 
 - (void)incrementAcceleration:(float)inc{
