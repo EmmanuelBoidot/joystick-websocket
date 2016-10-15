@@ -224,7 +224,7 @@ CGFloat DistanceBetweenTwoPoints(CGPoint point1,CGPoint point2)
     CGFloat dy = point2.y - point1.y;
     CGFloat distance = sqrt(dx*dx + dy*dy);
 
-    return sqrt(dx*dx + dy*dy);
+    return distance;
 };
 
 @end

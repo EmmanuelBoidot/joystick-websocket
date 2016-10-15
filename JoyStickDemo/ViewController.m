@@ -58,7 +58,8 @@
     [self.radiusLabel setTitle:s3 forState:UIControlStateNormal];
     
 //    [self._mwebsocket echoTest];
-    NSString *msg = [NSString stringWithFormat:@"%.2f,%.2f",self.acceleration,self.angle];
+    NSString *msg = [NSString stringWithFormat:@"%.2f %.2f",self.acceleration,self.angle];
+    NSLog(@"acceleration, steering");
     [self._webSocket sendWithText:msg];
 }
 
@@ -132,7 +133,10 @@
 {
     [super viewDidLoad];
     
-    [self.accelerateButton setFrame:CGRectMake(self.view.frame.size.width-self.accelerateButton.frame.size.width-20, self.view.frame.size.height-self.accelerateButton.frame.size.height-40, self.accelerateButton.frame.size.width, self.accelerateButton.frame.size.height)];
+//    [self.accelerateButton setFrame:CGRectMake(self.view.frame.size.width-self.accelerateButton.frame.size.width-20, self.view.frame.size.height-self.accelerateButton.frame.size.height-40, self.accelerateButton.frame.size.width, self.accelerateButton.frame.size.height)];
+//    
+//    [self.decelerateButton setFrame:CGRectMake(self.view.frame.size.width-self.decelerateButton.frame.size.width-40, self.view.frame.size.height-self.decelerateButton.frame.size.height-120, self.decelerateButton.frame.size.width, self.decelerateButton.frame.size.height)];
+//    [self.decelerateButton setCenter:CGPoint(,0)]
     
     self.playerObjCOrigin = self.playerObjC.frame.origin;
         self.playerSwiftOrigin = self.playerSwift.frame.origin;

@@ -1790,9 +1790,7 @@ extension WebSocket {
      */
     @objc
     public func send(text text: String){
-        NSLog("Sending through websocket:\t'")
         NSLog(text)
-        NSLog("'\n")
         send(text)
     }
     /**

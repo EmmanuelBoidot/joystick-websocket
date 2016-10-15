@@ -13,9 +13,9 @@
 		6B10FBEF1A96B65F000D1FA3 /* MFLJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B10FBEA1A96B65F000D1FA3 /* MFLJoystick.m */; };
 		6B10FBF21A96B672000D1FA3 /* MFLSwiftJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B10FBF11A96B672000D1FA3 /* MFLSwiftJoystick.swift */; };
 		F06CEC2B1DB0940E00E5E886 /* websocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06CEC2A1DB0940E00E5E886 /* websocket.swift */; };
-		F06CEC331DB0C8A700E5E886 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F06CEC321DB0C8A700E5E886 /* libz.1.dylib */; };
 		F06CEC371DB15B1600E5E886 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = F06CEC361DB15B1600E5E886 /* lib */; };
 		F06CEC391DB15B3000E5E886 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = F06CEC381DB15B3000E5E886 /* Images */; };
+		F0E879DA1DB1B06C00EA22C0 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E879D41DB1AF5B00EA22C0 /* libz.1.dylib */; };
 		FE916AE3172AC49B00E60FA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE916AE2172AC49B00E60FA8 /* UIKit.framework */; };
 		FE916AE5172AC49B00E60FA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE916AE4172AC49B00E60FA8 /* Foundation.framework */; };
 		FE916AE7172AC49B00E60FA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE916AE6172AC49B00E60FA8 /* CoreGraphics.framework */; };
@@ -37,9 +37,9 @@
 		6B10FBEA1A96B65F000D1FA3 /* MFLJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLJoystick.m; sourceTree = "<group>"; };
 		6B10FBF11A96B672000D1FA3 /* MFLSwiftJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFLSwiftJoystick.swift; sourceTree = "<group>"; };
 		F06CEC2A1DB0940E00E5E886 /* websocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = websocket.swift; sourceTree = "<group>"; };
-		F06CEC321DB0C8A700E5E886 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
-		F06CEC361DB15B1600E5E886 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../../usr/lib; sourceTree = "<group>"; };
+		F06CEC361DB15B1600E5E886 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = /usr/lib; sourceTree = "<absolute>"; };
 		F06CEC381DB15B3000E5E886 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = MFLJoystick/Images; sourceTree = "<group>"; };
+		F0E879D41DB1AF5B00EA22C0 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
 		FE916ADE172AC49B00E60FA8 /* JoyStickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyStickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE916AE2172AC49B00E60FA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FE916AE4172AC49B00E60FA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F06CEC331DB0C8A700E5E886 /* libz.1.dylib in Frameworks */,
+				F0E879DA1DB1B06C00EA22C0 /* libz.1.dylib in Frameworks */,
 				FE916AE3172AC49B00E60FA8 /* UIKit.framework in Frameworks */,
 				FE916AE5172AC49B00E60FA8 /* Foundation.framework in Frameworks */,
 				FE916AE7172AC49B00E60FA8 /* CoreGraphics.framework in Frameworks */,
@@ -114,6 +114,7 @@
 		FE916AD3172AC49B00E60FA8 = {
 			isa = PBXGroup;
 			children = (
+				F0E879D41DB1AF5B00EA22C0 /* libz.1.dylib */,
 				FE916AE8172AC49B00E60FA8 /* JoyStickDemo */,
 				FE916AE1172AC49B00E60FA8 /* Frameworks */,
 				FE916ADF172AC49B00E60FA8 /* Products */,
@@ -131,7 +132,6 @@
 		FE916AE1172AC49B00E60FA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F06CEC321DB0C8A700E5E886 /* libz.1.dylib */,
 				FE916AE2172AC49B00E60FA8 /* UIKit.framework */,
 				FE916AE4172AC49B00E60FA8 /* Foundation.framework */,
 				FE916AE6172AC49B00E60FA8 /* CoreGraphics.framework */,
@@ -196,7 +196,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Foley;
 				TargetAttributes = {
 					FE916ADD172AC49B00E60FA8 = {
@@ -287,6 +287,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -337,15 +338,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyStickDemo/JoyStickDemo-Prefix.pch";
 				INFOPLIST_FILE = "JoyStickDemo/JoyStickDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JoyStickDemo",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbrdna.manu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos9.2;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -360,14 +365,18 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyStickDemo/JoyStickDemo-Prefix.pch";
 				INFOPLIST_FILE = "JoyStickDemo/JoyStickDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JoyStickDemo",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbrdna.manu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos9.2;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
